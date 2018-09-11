@@ -1,6 +1,6 @@
 const games = require("../games")
 
-exports.seed = function(knex, Promise) {
+exports.seed = function (knex, Promise) {
   return knex("games").del()
     .then(function () {
       return knex("games").insert(games);
